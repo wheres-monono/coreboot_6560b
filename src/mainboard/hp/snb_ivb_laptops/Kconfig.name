@@ -30,5 +30,8 @@ config BOARD_HP_FOLIO_9470M
 config BOARD_HP_PROBOOK_6360B
 	bool "ProBook 6360b"
 
+config BOARD_HP_PROBOOK_6560B
+	bool "ProBook 6560b"
+
 config BOARD_HP_REVOLVE_810_G1
 	bool "EliteBook Revolve 810 G1"

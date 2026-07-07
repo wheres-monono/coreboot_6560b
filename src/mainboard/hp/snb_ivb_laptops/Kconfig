@@ -103,6 +103,15 @@ config BOARD_HP_PROBOOK_6360B
 	select SOUTHBRIDGE_INTEL_BD82X6X
 	select SUPERIO_SMSC_LPC47N217
 
+config BOARD_HP_PROBOOK_6560B
+	select BOARD_HP_SNB_IVB_LAPTOPS_COMMON
+	select BOARD_ROMSIZE_KB_4096
+	select EC_ACPI
+	select INTEL_INT15
+	select MAINBOARD_HAS_LIBGFXINIT # FIXME: check this
+	select SERIRQ_CONTINUOUS_MODE
+	select SOUTHBRIDGE_INTEL_BD82X6X
+
 config BOARD_HP_REVOLVE_810_G1
 	select BOARD_HP_SNB_IVB_LAPTOPS_COMMON
 	select BOARD_ROMSIZE_KB_16384
@@ -129,6 +138,7 @@ config VARIANT_DIR
 	default "8770w"          if BOARD_HP_8770W
 	default "folio_9470m"    if BOARD_HP_FOLIO_9470M
 	default "probook_6360b"  if BOARD_HP_PROBOOK_6360B
+	default "probook_6560b"  if BOARD_HP_PROBOOK_6560B
 	default "revolve_810_g1" if BOARD_HP_REVOLVE_810_G1
 
 config MAINBOARD_PART_NUMBER
@@ -142,6 +152,7 @@ config MAINBOARD_PART_NUMBER
 	default "EliteBook 8770w"          if BOARD_HP_8770W
 	default "EliteBook Folio 9470m"    if BOARD_HP_FOLIO_9470M
 	default "ProBook 6360b"            if BOARD_HP_PROBOOK_6360B
+	default "ProBook 6560b"		   if BOARD_HP_PROBOOK_6560B
 	default "EliteBook Revolve 810 G1" if BOARD_HP_REVOLVE_810_G1
 
 config OVERRIDE_DEVICETREE
@@ -158,6 +169,7 @@ config USBDEBUG_HCD_INDEX
 	default 1 if BOARD_HP_2560P || BOARD_HP_2760P || BOARD_HP_8460P || BOARD_HP_8560W
 	default 2 if BOARD_HP_2570P || BOARD_HP_8470P || BOARD_HP_8770W
 	default 1 if BOARD_HP_PROBOOK_6360B # FIXME: check this
+	default 2 if BOARD_HP_PROBOOK_6560B # FIXME: check this
 	default 2 if BOARD_HP_REVOLVE_810_G1 # FIXME: check this
 
 endif
