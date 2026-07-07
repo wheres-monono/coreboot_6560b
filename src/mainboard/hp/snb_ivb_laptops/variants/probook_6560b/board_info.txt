@@ -1,5 +1,5 @@
 Category: laptop
-Board URL: https://support.hp.com/us-en/product/troublehshooting/hp-probook6560b-notebook-pc/5045605
+Board URL: https://support.hp.com/us-en/product/troubleshooting/hp-probook6560b-notebook-pc/5045605
 ROM package: SOIC-8
 ROM protocol: SPI
 ROM socketed: n
