@@ -1,6 +1,7 @@
 Category: laptop
+Board URL: https://support.hp.com/us-en/product/troublehshooting/hp-probook6560b-notebook-pc/5045605
+ROM package: SOIC-8
 ROM protocol: SPI
-Flashrom support: n
-ROM package: 
-Rom socketed:
-Release year:
+ROM socketed: n
+Flashrom support: y
+Release year: 2011

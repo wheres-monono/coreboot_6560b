@@ -24,7 +24,7 @@ chip northbridge/intel/sandybridge
 				{1, 1, 0}, /* left front */
 				{1, 1, 0}, /* left back */
 				{1, 1, 1}, /* eSATA */
-				{1, 1, 1}, /* webcam
+				{1, 1, 1}, /* webcam */
 				{1, 0, 2},
 				{1, 0, 2}, /* bluetooth */
 				{0, 0, 3},
