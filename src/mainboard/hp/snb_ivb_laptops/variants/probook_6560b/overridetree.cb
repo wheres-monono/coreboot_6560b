@@ -1,7 +1,6 @@
-# SPDX-License-Identifier: GPL-2.0-or-later
-
 chip northbridge/intel/sandybridge
 	register "gfx" = "GMA_STATIC_DISPLAYS(1)"
+	register "gpu_cpu_backlight" = "0x00000211"
 	device domain 0x0 on
 		device ref host_bridge on
 			subsystemid 0x103c 0x1619
@@ -22,16 +21,16 @@ chip northbridge/intel/sandybridge
 			register "pcie_port_coalesce" = "1"
 			register "sata_port_map" = "0x3b"
 			register "usb_port_config" = "{
-				{1, 1, 0},
-				{1, 1, 0},
-				{1, 1, 1},
-				{1, 1, 1},
+				{1, 1, 0}, /* left front */
+				{1, 1, 0}, /* left back */
+				{1, 1, 1}, /* eSATA */
+				{1, 1, 1}, /* webcam
 				{1, 0, 2},
-				{1, 0, 2},
+				{1, 0, 2}, /* bluetooth */
 				{0, 0, 3},
 				{1, 1, 3},
 				{1, 1, 4},
-				{1, 1, 4},
+				{1, 1, 4}, /* fingerprint reader */
 				{1, 1, 5},
 				{1, 1, 5},
 				{1, 1, 6},
