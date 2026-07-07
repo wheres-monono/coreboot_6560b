@@ -1,0 +1,4 @@
+## SPDX-License-Identifier: GPL-2.0-only
+
+config BOARD_HEWLETT_PACKARD_HP_PROBOOK_6560B
+	bool "HP ProBook 6560b"
